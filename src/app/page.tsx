@@ -1,10 +1,10 @@
-import PageTitle from "@/components/ui/pageTitle";
 import { Products } from "@/components/custom/products";
+import { Banner } from "@/components/custom/banner";
 
 export default function Home() {
   return (
-    <div className="container p-0 pt-4">
-      <PageTitle text="Home Page" className="text-secondary text-5xl" />
+    <div className="container pt-4">
+      <Banner />
       <Products />
     </div>
   );
