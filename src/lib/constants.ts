@@ -9,23 +9,23 @@ export const publicRoutes: Route[] = [home, products, about, faq];
 
 export const banners = [
   {
-    id: 1,
-    src: "/assets/banner/banner-1.png",
+    id: 11,
+    src: "/assets/banner/banner-1.jpg",
   },
   {
-    id: 2,
+    id: 21,
     src: "/assets/banner/banner-2.jpg",
   },
   {
-    id: 3,
+    id: 31,
     src: "/assets/banner/banner-3.jpg",
   },
   {
-    id: 4,
+    id: 41,
     src: "/assets/banner/banner-4.jpg",
   },
   {
-    id: 5,
+    id: 51,
     src: "/assets/banner/banner-5.jpg",
   },
 ];

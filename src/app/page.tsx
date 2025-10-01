@@ -3,7 +3,7 @@ import { Banner } from "@/components/custom/banner";
 
 export default function Home() {
   return (
-    <div className="container pt-4">
+    <div className="container">
       <Banner />
       <Products />
     </div>
