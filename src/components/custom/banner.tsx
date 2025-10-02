@@ -16,8 +16,8 @@ export const Banner = () => {
     <div className="relative">
       <Swiper
         navigation={{
-          prevEl: ".swiper-button-prev",
-          nextEl: ".swiper-button-next",
+          prevEl: ".banner-swiper-button-prev",
+          nextEl: ".banner-swiper-button-next",
         }}
         pagination={{ clickable: true }}
         modules={[Navigation, Autoplay]}
@@ -41,8 +41,8 @@ export const Banner = () => {
         ))}
       </Swiper>
       <SwiperButtons
-        prevClassName="-left-16 border border-2 border-border  lg:flex hidden"
-        nextClassName="-right-16 border border-2 border-border  lg:flex hidden"
+        prevClassName="-left-16 border border-2 border-border  lg:flex hidden banner-swiper-button-prev"
+        nextClassName="-right-16 border border-2 border-border  lg:flex hidden banner-swiper-button-next"
       />
     </div>
   );
