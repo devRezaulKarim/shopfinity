@@ -5,7 +5,7 @@ import { NavLink } from "./nav-link";
 export const TopBar = () => {
   return (
     <div className="bg-primary">
-      <div className="container flex items-center justify-between px-4 py-2 text-white">
+      <div className="container flex items-center justify-between py-2 text-white">
         <nav className="flex items-center gap-x-4 divide-x-2 divide-white">
           {topLeftRoutes.map((route, index) => (
             <NavLink

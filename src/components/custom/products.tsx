@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { Product } from "@/components/custom/product";
+import { ProductCard } from "./product";
 
 export const Products = async () => {
   const { data } = await axios("https://dummyjson.com/products");
@@ -8,7 +8,7 @@ export const Products = async () => {
   return (
     <div>
       {products.map((product) => (
-        <Product key={product.id} {...product} />
+        <ProductCard key={product.id} {...product} />
       ))}
     </div>
   );

@@ -20,7 +20,7 @@ export const Categories = () => {
   }, []);
 
   return (
-    <section className="2x py-10 lg:py-15">
+    <section className="section">
       <Swiper
         navigation={{
           prevEl: ".cat-swiper-button-prev",

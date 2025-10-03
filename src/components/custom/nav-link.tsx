@@ -14,8 +14,8 @@ export const NavLink = ({ label, href, className }: NavLinkProps) => {
     <Link
       href={href}
       className={cn(
-        "",
-        pathname === href && "text-primary font-semibold",
+        "text-sm sm:text-base",
+        pathname === href && "text-primary font-medium",
         className,
       )}
     >
