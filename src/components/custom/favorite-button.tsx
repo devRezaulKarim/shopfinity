@@ -12,7 +12,7 @@ export const FavoriteButton = ({ id }: { id: number }) => {
       onClick={() => setIsFavorite(!isFavorite)}
       size="icon"
       className={cn(
-        "bg-primary/10 hover:bg-primary fil group absolute top-2 right-2 cursor-pointer rounded-full text-gray-600 transition-colors hover:text-white",
+        "bg-primary/10 hover:bg-primary fil group absolute top-2 right-2 cursor-pointer rounded-full text-secondary transition-colors ",
       )}
     >
       <Heart

@@ -7,7 +7,7 @@ import {
   CardTitle,
   CardFooter,
 } from "@/components/ui/card";
-import { Star } from "lucide-react";
+import { ShoppingCart, Star } from "lucide-react";
 import { FavoriteButton } from "./favorite-button";
 import { Badge } from "../ui/badge";
 import Link from "next/link";
@@ -71,7 +71,9 @@ export const ProductCard = ({
 
       {/* Footer */}
       <CardFooter>
-        <Button className="w-full">Add to Cart</Button>
+        <Button className="flex w-full items-center gap-x-2">
+          <ShoppingCart /> <span>Add to Cart</span>
+        </Button>
       </CardFooter>
     </Card>
   );
