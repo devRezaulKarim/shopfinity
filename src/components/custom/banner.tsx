@@ -13,7 +13,7 @@ import { banners } from "@/lib/constants";
 
 export const Banner = () => {
   return (
-    <div className="relative">
+    <div className="relative my-4">
       <Swiper
         navigation={{
           prevEl: ".banner-swiper-button-prev",
@@ -35,7 +35,7 @@ export const Banner = () => {
               alt="Banner"
               width={2000}
               height={360}
-              className="w-full"
+              className="w-full rounded-lg"
             />
           </SwiperSlide>
         ))}

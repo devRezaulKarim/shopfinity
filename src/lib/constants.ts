@@ -22,12 +22,36 @@ import {
   Trophy, // womens shoes
 } from "lucide-react";
 
-export const home: Route = { label: "Home", href: "/" };
-export const products: Route = { label: "Products", href: "/products" };
-export const about: Route = { label: "About", href: "/about" };
-export const faq: Route = { label: "FAQ", href: "/faq" };
+// 1. Define all routes in a single object (dictionary style)
+export const routes = {
+  home: { label: "Home", href: "/" },
+  products: { label: "Products", href: "/products" },
+  faq: { label: "FAQ", href: "/faq" },
+  about: { label: "About Us", href: "/about" },
+  contact: { label: "Contact Us", href: "/contact" },
+  freeDelivery: { label: "Free Delivery", href: "/free-delivery" },
+  returnPolicy: { label: "Returns Policy", href: "/return-policy" },
+  help: { label: "Help Center", href: "/help-center" },
+  account: { label: "My Account", href: "/account" },
+  favorite: { label: "Favorite", href: "/favorite" },
+  cart: { label: "Cart", href: "/cart" },
+};
 
-export const publicRoutes: Route[] = [home, products, about, faq];
+// 2. Create groups from the base routes
+export const topLeftRoutes: Route[] = [
+  routes.about,
+  routes.freeDelivery,
+  routes.returnPolicy,
+];
+
+export const topRightRoutes: Route[] = [routes.help, routes.account];
+
+export const publicRoutes: Route[] = [
+  routes.home,
+  routes.products,
+  routes.faq,
+  routes.contact,
+];
 
 export const banners = [
   {
