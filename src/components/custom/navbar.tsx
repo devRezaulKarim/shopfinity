@@ -20,7 +20,7 @@ export const Navbar = () => {
         <div className="container flex items-center justify-between p-4">
           <Logo />
           <div className="flex grow items-center justify-center gap-x-4">
-            <div className="relative flex w-full max-w-80 items-stretch overflow-hidden">
+            <div className="relative flex w-full max-w-50 items-stretch overflow-hidden md:max-w-60 lg:max-w-80">
               <Input
                 className="grow rounded-l-full rounded-r-none border-0 px-4 focus:outline-0 focus-visible:shadow-none focus-visible:ring-0"
                 placeholder="Search for products"

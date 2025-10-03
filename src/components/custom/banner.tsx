@@ -29,7 +29,7 @@ export const Banner = () => {
         spaceBetween={30}
       >
         {banners.map((banner) => (
-          <SwiperSlide key={banner.id}>
+          <SwiperSlide key={banner.id} className="rounded-lg">
             <Image
               src={banner.src}
               alt="Banner"

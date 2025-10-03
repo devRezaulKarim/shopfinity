@@ -10,6 +10,7 @@ export const Logo = () => {
         alt="Shopfinity logo"
         width={300}
         height={30}
+        className="w-40 md:w-50 lg:w-60 xl:w-auto"
       />
     </Link>
   );
